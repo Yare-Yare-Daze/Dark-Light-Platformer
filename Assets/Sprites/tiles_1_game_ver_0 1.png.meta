@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37e705430c2c71448befdd6ffb0d44d3
+guid: 9c47b013c1ae7df40ac0f0f6bfd10e7f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tiles_1_game_ver_0_0
+      name: tiles_1_game_ver_0 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,20 +124,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb10812edf152584baf4b7c70e036586
-      internalID: -19386498
+      spriteID: b4cca5b66932975478ec2e1a93fec47a
+      internalID: -651643101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1_game_ver_0_1
+      name: tiles_1_game_ver_0 1_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,20 +145,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb18b527f702fc34f95d8b15f777d1ba
-      internalID: 914764396
+      spriteID: 49760adf056b90f4c8b14f0583ae8b0e
+      internalID: 759603856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1_game_ver_0_2
+      name: tiles_1_game_ver_0 1_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,35 +166,35 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ba5983ad669edc458d2c3b009c0573e
-      internalID: -219159116
+      spriteID: 4466023f4b605f249be11ba97ae6946e
+      internalID: 913087746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1_game_ver_0_3
+      name: tiles_1_game_ver_0 1_3
       rect:
         serializedVersion: 2
         x: 51
         y: 48
         width: 10
-        height: 8
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c85b44c2aeaea5b4d8a0f20d6b144eab
-      internalID: -1741020575
+      spriteID: 7486badd9e890184f882dd12fcdfb217
+      internalID: 94285646
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tiles_1_game_ver_0_3: -1741020575
-      tiles_1_game_ver_0_2: -219159116
-      tiles_1_game_ver_0_0: -19386498
-      tiles_1_game_ver_0_1: 914764396
+      tiles_1_game_ver_0 1_0: -651643101
+      tiles_1_game_ver_0 1_3: 94285646
+      tiles_1_game_ver_0 1_1: 759603856
+      tiles_1_game_ver_0 1_2: 913087746
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

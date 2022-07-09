@@ -73,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -219159116, guid: 37e705430c2c71448befdd6ffb0d44d3, type: 3}
+  m_Sprite: {fileID: 913087746, guid: 9c47b013c1ae7df40ac0f0f6bfd10e7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.9375, y: 0.9375}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 5130647884657616344}
   - component: {fileID: 5130647884657616345}
   m_Layer: 0
-  m_Name: Ground_2
-  m_TagString: Untagged
+  m_Name: HorizGround_2
+  m_TagString: Horizontal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
