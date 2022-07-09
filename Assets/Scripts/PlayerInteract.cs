@@ -3,20 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum eModeMove
+{
+    horizontal,
+    vertical,
+    anywhere
+}
+
 public class PlayerInteract : MonoBehaviour
 {
-    enum eModeMove
-    {
-        horizontal,
-        vertical,
-        anywhere
-    }
-    
     public float speed = 5f;
+
+    public eModeMove EModeMove;
 
     private Rigidbody2D _rigidbody2D;
     private Vector3 _targetVector;
-    private eModeMove _eModeMove;
+    
 
     private void Awake()
     {
@@ -36,7 +38,7 @@ public class PlayerInteract : MonoBehaviour
     private void MoveWithCurrentMode()
     {
         _targetVector = Vector3.zero;
-        switch (_eModeMove)
+        switch (EModeMove)
         {
             case eModeMove.horizontal:
                 HorizontalMove();
@@ -82,32 +84,32 @@ public class PlayerInteract : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D col)
     {
         
-        if (_eModeMove == eModeMove.vertical && col.gameObject.CompareTag("Horizontal") || 
-            _eModeMove == eModeMove.horizontal && col.gameObject.CompareTag("Vertical"))
+        if (EModeMove == eModeMove.vertical && col.gameObject.CompareTag("Horizontal") || 
+            EModeMove == eModeMove.horizontal && col.gameObject.CompareTag("Vertical"))
         {
-            _eModeMove = eModeMove.anywhere;
+            EModeMove = eModeMove.anywhere;
         }
         else if(col.gameObject.CompareTag("Horizontal"))
         {
-            _eModeMove = eModeMove.horizontal;
+            EModeMove = eModeMove.horizontal;
         }
         else if (col.gameObject.CompareTag("Vertical"))
         {
-            _eModeMove = eModeMove.vertical;
+            EModeMove = eModeMove.vertical;
         }
 
-        print("eModeMove = " + _eModeMove);
+        print("eModeMove = " + EModeMove);
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (_eModeMove == eModeMove.anywhere && other.gameObject.CompareTag("Horizontal"))
+        if (EModeMove == eModeMove.anywhere && other.gameObject.CompareTag("Horizontal"))
         {
-            _eModeMove = eModeMove.vertical;
+            EModeMove = eModeMove.vertical;
         }
-        else if (_eModeMove == eModeMove.anywhere && other.gameObject.CompareTag("Vertical"))
+        else if (EModeMove == eModeMove.anywhere && other.gameObject.CompareTag("Vertical"))
         {
-            _eModeMove = eModeMove.horizontal;
+            EModeMove = eModeMove.horizontal;
         }
         
     }

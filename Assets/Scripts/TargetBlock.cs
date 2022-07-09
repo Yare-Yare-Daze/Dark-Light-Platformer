@@ -19,13 +19,26 @@ public class TargetBlock : MonoBehaviour
     
     private GameObject _darkGO;
     private GameObject _lightGO;
-    
+    private PlayerInteract _playerInteract;
 
     private void Start()
     {
+        _playerInteract = GameObject.FindWithTag("Player").GetComponent<PlayerInteract>();
         GameController.S.countDarkBlocks += 1;
         _darkGO = transform.GetChild(0).gameObject;
         _lightGO = transform.GetChild(1).gameObject;
+    }
+
+    private void FixedUpdate()
+    {
+        if (_playerInteract.EModeMove == eModeMove.vertical)
+        {
+            Physics2D.gravity = new Vector2(9.8f, 0);
+        }
+        else if (_playerInteract.EModeMove == eModeMove.horizontal)
+        {
+            Physics2D.gravity = new Vector2(0, -9.8f);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
