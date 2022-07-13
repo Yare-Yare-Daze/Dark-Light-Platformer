@@ -24,9 +24,9 @@ public class GameController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (countLightBlocks == countDarkBlocks)
+        /*if (countLightBlocks == countDarkBlocks)
         {
             Debug.Log("Level passed!");
-        }
+        }*/
     }
 }

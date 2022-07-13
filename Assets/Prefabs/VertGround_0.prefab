@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2873995607179506036}
   - component: {fileID: 2873995607179506027}
   m_Layer: 0
-  m_Name: VerticalGround_0
+  m_Name: VertGround_0
   m_TagString: Vertical
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

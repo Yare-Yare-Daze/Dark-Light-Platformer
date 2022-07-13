@@ -23,6 +23,7 @@ public class TargetBlock : MonoBehaviour
 
     private void Start()
     {
+        _eState = eState.dark;
         _playerInteract = GameObject.FindWithTag("Player").GetComponent<PlayerInteract>();
         GameController.S.countDarkBlocks += 1;
         _darkGO = transform.GetChild(0).gameObject;
@@ -31,20 +32,21 @@ public class TargetBlock : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_playerInteract.EModeMove == eModeMove.vertical)
+        /*if (_playerInteract.EModeMove == eModeMove.vertical)
         {
             Physics2D.gravity = new Vector2(9.8f, 0);
         }
         else if (_playerInteract.EModeMove == eModeMove.horizontal)
         {
             Physics2D.gravity = new Vector2(0, -9.8f);
-        }
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Player"))
+        if (_eState == eState.dark && col.gameObject.CompareTag("Player"))
         {
+            _eState = eState.light;
             isLight = true;
             GameController.S.countLightBlocks += 1;
             _darkGO.SetActive(false);

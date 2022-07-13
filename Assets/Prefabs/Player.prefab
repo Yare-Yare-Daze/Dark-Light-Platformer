@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  EModeMove: 0
 --- !u!1 &5528861170403103979
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +107,7 @@ GameObject:
   - component: {fileID: 5528861170403103977}
   - component: {fileID: 5528861170403103978}
   m_Layer: 0
-  m_Name: tiles_1_game_ver_0_3
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
